@@ -1,0 +1,84 @@
+$white: #ffffff;
+$blue: #27cbf4;
+$purple: #c798f9;
+$green: #9dd53a;
+
+$gradient: linear-gradient(45deg, $green 0%, $blue 25%, $purple 86%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { font-size: 14pt; }
+
+body {
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: $blue;
+  &:visited { 
+    color:  $purple;
+  }
+  &:hover, 
+  &:active {
+    color: $green;
+  }
+  
+}
+
+section {
+  height: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+  
+  header, article {
+    flex: 1 0 50%;
+  }
+}
+
+header {
+  background: url(https://www.wallpaperflare.com/static/224/791/808/landscape-photography-tall-tress-foggy-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size:  cover;
+  background-blend-mode: overlay;
+  
+  padding-top: 4rem;
+  padding-left: 5%;
+  
+  p {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: .75rem;
+  }
+  
+  h1 {
+    font-weight: 100;
+    font-size: 7rem;
+  }
+}
+
+article {
+  padding: 2em;
+  
+  h2 {
+    font-size: 2rem;
+    padding-left: .25rem;
+    
+  }
+  
+  hr {
+    border: 0;
+    height: 2px;
+    background-color: $green;
+    background: $gradient;
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}
